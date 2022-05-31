@@ -31,7 +31,7 @@ p {
 }
 
 .main-container {
-    min-height: 100vh;
+    min-height: 150vh;
     width: 100%;
     display: flex;
     align-items: center;
@@ -194,17 +194,17 @@ p {
 
 #portfolio .project-img {
     flex-basis: 50%;
-    height: 300px;
+    height: 400px;
     overflow: hidden;
     position: relative;
 }
 
 #portfolio .project-img figcaption {
-    font-size: 11px;
+    font-size: 10px;
     text-align: center;
-    font-weight: 400;
+    font-weight: 300;
     color: black;
-    background-image: linear-gradient(60deg, gold 0%, rgb(188, 164, 27));
+    background-image: linear-gradient(60deg, gold 0%, rgb(188, 164, 27) 100%);
 }
 
 #portfolio .project-img:after {
@@ -219,7 +219,7 @@ p {
 }
 
 #portfolio .project-img img {
-    transition: 0.5s ease transform;
+    transition: 0.5s ease-in-out transform;
 }
 
 #portfolio .project-item:hover .project-img img {
@@ -264,10 +264,7 @@ p {
         width: 100%;
         border-radius: 0;
     }
-    #portfolio .all-projects .project-info {
-        height: 100%;
-    }
-    #portfolio .all-projects .project-img {
+    #portfolio .all-projects .project-info .project-img {
         height: 100%;
     }
     #portfolio .project-item:nth-child(even) {
