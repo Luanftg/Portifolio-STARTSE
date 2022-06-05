@@ -1,0 +1,25 @@
+/* Seção History */
+
+#history .history-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 50px 0;
+    color: white;
+}
+
+#history .history-container img {
+    border-radius: 45%;
+    width: 600px;
+}
+
+#history .history-container ul li {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    max-width: 1000px;
+    margin: 0 auto;
+}

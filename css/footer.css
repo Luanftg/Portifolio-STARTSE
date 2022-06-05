@@ -1,0 +1,27 @@
+footer ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+footer ul li a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+footer ul li a img {
+    width: 30px;
+    height: 30px;
+}
+
+footer p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 10px
+}

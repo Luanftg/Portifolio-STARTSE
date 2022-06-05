@@ -1,4 +1,11 @@
     @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;1,100&display=swap');
+    @import url("./css/history.css");
+    @import url("./css/container-menu.css");
+    @import url("./css/portfolio.css");
+    @import url("./css/presentation.css");
+    @import url("./css/keyframes.css");
+    @import url("./css/media-query.css");
+    @import url("./css/footer.css");
     * {
         padding: 0;
         margin: 0;
@@ -10,10 +17,9 @@
         font-family: 'Poppins', 'Times New Roman', Times, serif;
         scroll-behavior: smooth;
         animation: gradient 10s ease alternate infinite;
-        background: linear-gradient(-45deg, #ee7752, #fffb00, #000000, #000000) no-repeat;
-        /*background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab) no-repeat;*/
-        background-size: 300% 300%;
-        ;
+        /*background: linear-gradient(-45deg, #d4ee52, gold, #000000, #141d03) no-repeat;
+        background-size: 300% 300%;*/
+        background-color: rgb(34, 17, 43);
     }
     
     q {
@@ -44,7 +50,7 @@
     }
     
     p {
-        font-size: 1.4rem;
+        font-size: 1.8rem;
         margin-top: 5px;
         line-height: 2.5rem;
         font-weight: 200;
@@ -53,11 +59,11 @@
     }
     
     .main-container {
-        min-height: 91vh;
+        min-height: 120vh;
         width: 100%;
         display: flex;
         justify-content: flex-start;
-        align-items: flex-end;
+        align-items: baseline;
     }
     
     .section-title {
@@ -68,234 +74,10 @@
         letter-spacing: .2rem;
         text-align: center;
     }
+    /*Footer*/
     /* container-menu */
-    
-    .cta {
-        display: inline-block;
-        padding: 5px 15px;
-        color: gold;
-        background-color: transparent;
-        border: 2px solid gold;
-        font-size: 1.5rem;
-        text-transform: uppercase;
-        letter-spacing: .1rem;
-        transition: .3s ease;
-        transition-property: background-color, color;
-    }
-    
-    .cta:hover {
-        color: white;
-        font-weight: 700;
-        background-color: gold;
-    }
-    
-    #container-menu nav ul {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
     /* Seção de Apresentação */
-    
-    #presentation {
-        background-image: url("./img/Ivan-Geier-IGPix-Travel.webp");
-        background-size: cover;
-        background-position: top center;
-        position: relative;
-        z-index: 1;
-    }
-    
-    #presentation h1 {
-        display: block;
-        width: fit-content;
-        font-size: 5rem;
-        position: relative;
-        color: transparent;
-        animation: text_reveal .5s ease forwards;
-        animation-delay: .5s;
-    }
-    
-    #presentation h1:nth-child(1) {
-        animation-delay: .8s;
-    }
-    
-    #presentation h1:nth-child(2) {
-        animation-delay: 1.6s;
-    }
-    
-    #presentation h1:nth-child(3) {
-        animation: text_reveal_name .5s ease forwards;
-        animation-delay: 2.8s;
-    }
-    
-    #presentation h1 span {
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 0%;
-        animation: text_reveal_box 1s ease;
-        animation-delay: .5s;
-        background-color: gold;
-    }
-    
-    #presentation h1:nth-child(1) span {
-        animation-delay: .5s;
-    }
-    
-    #presentation h1:nth-child(2) span {
-        animation: text_reveal_box 1s ease alternate-reverse;
-        animation-delay: 1.5s;
-    }
-    
-    #presentation h1:nth-child(3) span {
-        animation-delay: 2.5s;
-    }
-    
-    #presentation::after {
-        content: "";
-        position: absolute;
-        left: 0;
-        top: 0;
-        height: 100%;
-        width: 100%;
-        background-color: black;
-        opacity: 0.5;
-        z-index: -1;
-    }
+    /* Seção History */
     /* Seção de portifólio */
-    
-    #portfolio .portfolio {
-        flex-direction: column;
-        max-width: 1200px;
-        margin: auto;
-        padding: 100px 0;
-    }
-    
-    #portfolio .portfolio-header h1 {
-        margin-bottom: 50px;
-    }
-    
-    #portifolio .all-projects {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-    }
-    
-    #portfolio .project-item {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        width: 80%;
-        margin: 20px auto;
-        overflow: hidden;
-        border-radius: 10px;
-    }
-    
-    #portfolio .project-info {
-        padding: 30p;
-        flex-basis: 50%;
-        height: 100%;
-        display: flex;
-        align-items: flex-start;
-        justify-content: center;
-        flex-direction: column;
-        background-image: linear-gradient(60deg, gold 0%, rgb(240, 215, 78));
-    }
-    
-    #portfolio .project-info h1 {
-        font-size: 4rem;
-        font-weight: 500px;
-    }
-    
-    #portfolio .project-info h2 {
-        font-size: 1.8rem;
-        font-weight: 500;
-        margin-top: 10px;
-    }
-    
-    #portfolio .project-img {
-        flex-basis: 50%;
-        height: 400px;
-        overflow: hidden;
-        position: relative;
-    }
-    
-    #portfolio .project-img figcaption {
-        font-size: 10px;
-        text-align: center;
-        font-weight: 300;
-        color: black;
-        background-image: linear-gradient(60deg, rgb(253, 244, 0) 0%, rgb(246, 225, 105) 100%);
-    }
-    
-    #portfolio .project-img:after {
-        /*content: '';*/
-        position: absolute;
-        left: 0;
-        top: 0;
-        height: 100%;
-        width: 100%;
-        /*background-image: linear-gradient(60deg, rgb(218, 186, 5) 0%, rgb(250, 225, 84) 100%);*/
-        opacity: 0.2;
-    }
-    
-    #portfolio .project-img img {
-        transition: 0.6s ease-in-out transform;
-    }
-    
-    #portfolio .project-item:hover .project-img img {
-        transform: scale(1.2);
-    }
     /*Keyframes*/
-    
-    @keyframes text_reveal {
-        100% {
-            color: white;
-        }
-    }
-    
-    @keyframes text_reveal_name {
-        100% {
-            color: gold;
-            font-weight: 500;
-        }
-    }
-    
-    @keyframes text_reveal_box {
-        50% {
-            width: 100%;
-            left: 0;
-        }
-        100% {
-            width: 0;
-            left: 100%;
-        }
-    }
-    
-    @keyframes gradient {
-        from {
-            background-position: 0 50%;
-        }
-        to {
-            background-position: 100% 50%;
-        }
-    }
     /* Media query */
-    
-    @media only screen and (min-width: 768px) {
-        #portfolio .project-item {
-            flex-direction: row;
-            height: 400px;
-            margin: 0;
-            width: 100%;
-            border-radius: 0;
-        }
-        #portfolio .all-projects .project-info .project-img {
-            height: 100%;
-        }
-        #portfolio .project-item:nth-child(even) {
-            flex-direction: row-reverse;
-        }
-    }

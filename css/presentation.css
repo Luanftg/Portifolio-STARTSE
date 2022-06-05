@@ -1,0 +1,65 @@
+#presentation {
+    background-image: url("../img/Ivan-Geier-IGPix-Travel.webp");
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+
+#presentation h1 {
+    display: block;
+    width: fit-content;
+    font-size: 5rem;
+    position: relative;
+    color: transparent;
+    animation: text_reveal .5s ease forwards;
+    animation-delay: .5s;
+}
+
+#presentation h1:nth-child(1) {
+    animation: text_reveal_name .5s ease forwards;
+    animation-delay: .8s;
+}
+
+#presentation h1:nth-child(2) {
+    animation-delay: 1.6s;
+}
+
+#presentation h1:nth-child(3) {
+    animation-delay: 2.8s;
+}
+
+#presentation h1 span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0%;
+    animation: text_reveal_box 1s ease;
+    animation-delay: .5s;
+    background-color: gold;
+}
+
+#presentation h1:nth-child(1) span {
+    animation-delay: .5s;
+}
+
+#presentation h1:nth-child(2) span {
+    animation: text_reveal_box 1s ease alternate-reverse;
+    animation-delay: 1.5s;
+}
+
+#presentation h1:nth-child(3) span {
+    animation-delay: 2.5s;
+}
+
+#presentation::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.5;
+    z-index: -1;
+}

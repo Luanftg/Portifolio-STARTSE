@@ -6,23 +6,29 @@
 
 ---
 
-### Substituição por Tags Semânticas
+### Inclusão das Tags Semânticas
 
-- [ ] ``<articles>`` = encapsulando as informações de cada projeto
-- [ ] ``<figure>`` = Incluindo legenda as fotos com `<figcaption>`
-- [ ] `<q>` = citação
-- [ ] ``<cite>`` = 
+- [ ] ``<articles>``
+- [ ] ``<figure>`` 
+- [ ] `<figcaption>`
+- [ ] `<q>` 
+- [ ] ``<cite>``  
 - [ ] `<header>`
+- [ ] ``<hgroup>``
 
 ---
 
 #### REFERÊNCIAS
 
-- `<articles>` = *The ``<article>`` HTML element represents a self-contained composition in a document, page, application, or site, which is intended to be independently distributable or reusable.*
-[MDN - Articles](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/article) 
-- ``<figure>`` = *The ``<figure>`` HTML element represents self-contained content, potentially with an optional caption, which is specified using the <figcaption> element.*
-[MDN - Figure](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figure)
+- [MDN - Articles](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/article)  = *The ``<article>`` HTML element represents a self-contained composition in a document, page, application, or site, which is intended to be independently distributable or reusable.*
+- [MDN - Figure](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figure) = *The ``<figure>`` HTML element represents self-contained content, potentially with an optional caption, which is specified using the ``<figcaption>`` element.*
+- [MDN - Hgroup](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/hgroup) = *O elemento HTML ``<hgroup>`` destina-se a agrupar cabeçalhos de diferentes níveis para uma seção do documento. Ele agrupa (é um container para) um conjunto de elementos ``<h1>–<h6>``.*
 
-[Dust-me Selector](http://www.brothercake.com/dustmeselectors/)
+- Auditores de páginas:
 
-[Page Speed Insights]()
+  - [Dust-me Selector](http://www.brothercake.com/dustmeselectors)
+
+  - [Page Speed Insights](https://pagespeed.web.dev/)
+
+- Materiais Complementares
+  - [Vector Icons](https://icons8.com/icons/)
