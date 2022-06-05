@@ -22,7 +22,7 @@ Altere as animações, adicione um contexto interessante para o site, como por e
 
 ### Escolha do escopo
 
-**A decisão foi criar uma Página de Apresentação Artística para um bailarino (EU- ;) )  incluíndo seus contatos, currículo e Portifólio da trajetória Profissional**
+**A decisão foi criar uma Página de Apresentação Artística para um bailarino (EU - ;) )  incluíndo seus contatos, currículo e Portifólio da trajetória Profissional**
 
 ### Inclusão das Tags Semânticas
 
@@ -34,6 +34,14 @@ Altere as animações, adicione um contexto interessante para o site, como por e
 - [x] `<header>`
 - [x] ``<hgroup>``
 - [x] ``<footer>``
+
+### Mudança na direção da animação animação com:
+
+- ``alternate-reverse``
+
+### Organização do diretorio que contém os arquivos css a partir do:
+
+- ``@import``
 
 ---
 <center>
@@ -47,6 +55,7 @@ Altere as animações, adicione um contexto interessante para o site, como por e
 ---
 
 </center>
+
 #### REFERÊNCIAS
 
 - [MDN - Articles](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/article)  = *The ``<article>`` HTML element represents a self-contained composition in a document, page, application, or site, which is intended to be independently distributable or reusable.*
