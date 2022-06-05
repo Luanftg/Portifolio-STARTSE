@@ -53,42 +53,46 @@
     }
     
     .main-container {
-        min-height: 120vh;
+        min-height: 91vh;
         width: 100%;
         display: flex;
-        align-items: center;
-        justify-content: center;
+        justify-content: flex-start;
+        align-items: flex-end;
     }
     
     .section-title {
         font-size: 4rem;
         font-weight: 500;
         color: whitesmoke;
-        margin-top: 5px;
-        margin-bottom: 10px;
         text-transform: uppercase;
         letter-spacing: .2rem;
         text-align: center;
     }
     /* container-menu */
     
-    #container-menu nav {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
+    .cta {
+        display: inline-block;
+        padding: 5px 15px;
+        color: gold;
+        background-color: transparent;
+        border: 2px solid gold;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        letter-spacing: .1rem;
+        transition: .3s ease;
+        transition-property: background-color, color;
+    }
+    
+    .cta:hover {
+        color: white;
+        font-weight: 700;
+        background-color: gold;
     }
     
     #container-menu nav ul {
         display: flex;
-        flex-direction: row;
         align-items: center;
-        justify-content: space-evenly;
-    }
-    
-    #container-menu img {
-        max-height: 80px;
-        max-width: 200px;
+        justify-content: center;
     }
     /* Seção de Apresentação */
     
@@ -123,26 +127,6 @@
         animation-delay: 2.8s;
     }
     
-    #presentation .cta {
-        display: inline-block;
-        padding: 10px 30px;
-        color: gold;
-        background-color: transparent;
-        border: 2px solid gold;
-        font-size: 2rem;
-        text-transform: uppercase;
-        letter-spacing: .1rem;
-        margin-top: 20px;
-        transition: .3s ease;
-        transition-property: background-color, color;
-    }
-    
-    #presentation .cta:hover {
-        color: white;
-        font-weight: 700;
-        background-color: gold;
-    }
-    
     #presentation h1 span {
         position: absolute;
         top: 0;
@@ -159,6 +143,7 @@
     }
     
     #presentation h1:nth-child(2) span {
+        animation: text_reveal_box 1s ease alternate-reverse;
         animation-delay: 1.5s;
     }
     
@@ -178,9 +163,6 @@
         z-index: -1;
     }
     /* Seção de portifólio */
-    /* #portfolio {
-    background-color: rgb(15, 9, 16);
-} */
     
     #portfolio .portfolio {
         flex-direction: column;
