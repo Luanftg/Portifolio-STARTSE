@@ -1,4 +1,6 @@
-# DESAFIO 01 START-SE : Portifólio com HTML E CSS
+<center>
+
+# DESAFIO 01 - START-SE : Portifólio com HTML E CSS
 
 <img alt="Luan-CSS" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
 
@@ -6,18 +8,45 @@
 
 ---
 
-### Inclusão das Tags Semânticas
+## DESAFIO
 
-- [ ] ``<articles>``
-- [ ] ``<figure>`` 
-- [ ] `<figcaption>`
-- [ ] `<q>` 
-- [ ] ``<cite>``  
-- [ ] `<header>`
-- [ ] ``<hgroup>``
+
+*O desafio consiste em refatorar o projeto realizado na live Coding do dia 26/05 utilizando tags semânticas.
+Altere as animações, adicione um contexto interessante para o site, como por exemplo, criar um portfólio para fotógrafos, lista de lugares que você já viajou ou gostaria de conhecer, uma página com seções, enfim...*
+
+</center>
 
 ---
 
+## SOLUÇÃO
+
+### Escolha do escopo
+
+**A decisão foi criar uma Página de Apresentação Artística para um bailarino (EU- ;) )  incluíndo seus contatos, currículo e Portifólio da trajetória Profissional**
+
+### Inclusão das Tags Semânticas
+
+- [x] ``<articles>``
+- [x] ``<figure>`` 
+- [x] `<figcaption>`
+- [x] `<q>` 
+- [x] ``<cite>``  
+- [x] `<header>`
+- [x] ``<hgroup>``
+- [x] ``<footer>``
+
+---
+<center>
+
+## PROJETO FINALIZADO
+
+![Miniatura do Portifólio](./img/capa.jpg)
+-Confira o projeto finalizado em:
+[DESAFIO PORTIFÓLIO](https://luanftg.github.io/Portifolio-STARTSE/)
+
+---
+
+</center>
 #### REFERÊNCIAS
 
 - [MDN - Articles](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/article)  = *The ``<article>`` HTML element represents a self-contained composition in a document, page, application, or site, which is intended to be independently distributable or reusable.*
